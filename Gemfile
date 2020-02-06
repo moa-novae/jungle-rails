@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 ruby "2.3.5"
-# ENV variable
-gem 'dotenv-rails', :groups => [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
@@ -44,7 +43,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'quiet_assets'
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', :groups => [:development, :test]
 end
 
 group :development do
