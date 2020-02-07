@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:create, :show]
 
   resources :about do
-    get "show"
+    get :show
   end
 
   namespace :admin do
@@ -21,6 +21,14 @@ Rails.application.routes.draw do
     resources :products, except: [:edit, :update, :show]
     resources :categories, only: [:index, :new, :create]
   end
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+    
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+  
 
 
 
