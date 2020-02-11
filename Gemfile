@@ -47,6 +47,9 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'dotenv-rails', :groups => [:development, :test]
   gem 'shoulda-matchers', '4.0.1'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 group :development do
