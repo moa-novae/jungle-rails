@@ -105,6 +105,7 @@ GEM
       pkg-config (~> 1.1.7)
     pg (0.18.4)
     pkg-config (1.1.7)
+    power_assert (0.2.6)
     puma (3.5.2)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
@@ -175,6 +176,8 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    shoulda-matchers (4.0.1)
+      activesupport (>= 4.2.0)
     spring (1.7.2)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
@@ -185,6 +188,8 @@ GEM
       sprockets (>= 3.0.0)
     stripe (1.48.0)
       rest-client (>= 1.4, < 3.0)
+    test-unit (3.1.5)
+      power_assert
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
@@ -217,6 +222,7 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
+  minitest
   money-rails
   newrelic_rpm
   pg
@@ -228,8 +234,10 @@ DEPENDENCIES
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  shoulda-matchers (= 4.0.1)
   spring
   stripe
+  test-unit
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
